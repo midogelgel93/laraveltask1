@@ -1,0 +1,16 @@
+table{
+border-collapse: collapse;
+width: 100%;
+}
+th {
+    background-color: rgb(18, 18, 136);
+    color: white;
+}
+table ,th,td{
+    border-color: gray;
+    border-style: solid;
+    padding: 0.5em;
+}
+.bg-even{
+    background-color: rgb(196, 164, 164);
+}

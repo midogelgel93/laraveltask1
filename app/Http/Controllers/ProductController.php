@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Categories;
+
 
 
 class ProductController extends Controller
@@ -11,11 +13,14 @@ class ProductController extends Controller
     //
     function index()
     {
-    $products = Product::get();
+        // $products DB::table('products')->paginate(3);
+    $products = Product::paginate(3);
     // dd($products->toArray());
     // $age =27;
+
     return view('products.index',["products"=>$products]);
     }
+
 
     function destroy ($id){
         // dd("destroy $id");

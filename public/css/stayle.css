@@ -2,6 +2,10 @@ table{
 border-collapse: collapse;
 width: 100%;
 }
+svg {
+    display: none !important;
+    width: 2px !important;
+}
 th {
     background-color: rgb(18, 18, 136);
     color: white;
